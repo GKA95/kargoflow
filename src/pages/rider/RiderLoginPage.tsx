@@ -29,10 +29,9 @@ export const RiderLoginPage: React.FC = () => {
       await login({ email, password, role: 'rider' });
       navigate('/rider/dashboard');
     } catch (err: any) {
-      setErrorMessage(
-        err.message ||
-          'Authentication failed. Ensure the Node/Express backend is running and your rider credentials are correct.'
-      );
+      const raw = err?.message || err;
+      const msg = typeof raw === 'string' ? raw : (raw?.message || JSON.stringify(raw) || 'Authentication failed. Ensure the Node/Express backend is running and your rider credentials are correct.');
+      setErrorMessage(msg);
     } finally {
       setIsLoading(false);
     }
@@ -61,7 +60,7 @@ export const RiderLoginPage: React.FC = () => {
             <AlertCircle className="w-4 h-4 shrink-0 text-rose-600 mt-0.5" />
             <div className="flex-1">
               <span className="font-semibold block">Rider Authentication Notice</span>
-              <span>{errorMessage}</span>
+              <span>{typeof errorMessage === 'string' ? errorMessage : (errorMessage as any)?.message || JSON.stringify(errorMessage)}</span>
             </div>
           </div>
         )}
@@ -131,7 +130,7 @@ export const RiderLoginPage: React.FC = () => {
         <GoogleAuthButton
           role="rider"
           onSuccess={() => navigate('/rider/dashboard')}
-          onError={(msg) => setErrorMessage(msg)}
+          onError={(msg) => setErrorMessage(typeof msg === 'string' ? msg : JSON.stringify(msg))}
         />
 
         <div className="text-center pt-2 text-xs text-slate-500">

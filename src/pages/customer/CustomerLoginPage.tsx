@@ -29,10 +29,9 @@ export const CustomerLoginPage: React.FC = () => {
       await login({ email, password, role: 'customer' });
       navigate('/customer/dashboard');
     } catch (err: any) {
-      setErrorMessage(
-        err.message ||
-          'Authentication failed. Ensure the Node/Express backend is running and your credentials are correct.'
-      );
+      const raw = err?.message || err;
+      const msg = typeof raw === 'string' ? raw : (raw?.message || JSON.stringify(raw) || 'Authentication failed. Ensure the Node/Express backend is running and your credentials are correct.');
+      setErrorMessage(msg);
     } finally {
       setIsLoading(false);
     }
@@ -61,7 +60,7 @@ export const CustomerLoginPage: React.FC = () => {
             <AlertCircle className="w-4 h-4 shrink-0 text-rose-600 mt-0.5" />
             <div className="flex-1">
               <span className="font-semibold block">Authentication Notice</span>
-              <span>{errorMessage}</span>
+              <span>{typeof errorMessage === 'string' ? errorMessage : (errorMessage as any)?.message || JSON.stringify(errorMessage)}</span>
             </div>
           </div>
         )}
@@ -135,7 +134,7 @@ export const CustomerLoginPage: React.FC = () => {
         <GoogleAuthButton
           role="customer"
           onSuccess={() => navigate('/customer/dashboard')}
-          onError={(msg) => setErrorMessage(msg)}
+          onError={(msg) => setErrorMessage(typeof msg === 'string' ? msg : JSON.stringify(msg))}
         />
 
         <div className="text-center pt-2 text-xs text-slate-500">

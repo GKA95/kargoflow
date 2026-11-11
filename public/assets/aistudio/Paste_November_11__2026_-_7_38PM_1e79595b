@@ -1,0 +1,791 @@
+1 19:36:23.59
+/api/auth/google
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:35:04.12
+/api/auth/google
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:34:51.83
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:34:51.41
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:34:05.28
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:34:04.83
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:33:42.55
+/api/auth/google
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:33:10.37
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:33:09.96
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:32:50.01
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+ 
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:32:49.85
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:32:49.70
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:32:49.55
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:16:14.81
+/api/auth/google
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:16:07.55
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:16:07.10
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:13:22.71
+/api/auth/google
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:13:07.20
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:13:06.76
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:12:50.47
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:12:50.04
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:10:52.10
+/api/auth/me
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+Nov 11 19:10:51.68
+/api/health
+[tls-profile] applied 'commercial/2025' -> /var/runtime/tls-profiles/commercial-2025.conf
+ 
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/src/server/app' imported from /var/task/api/index.js
+ 
+    at finalizeResolution (node:internal/modules/esm/resolve:247:11)
+ 
+    at moduleResolve (node:internal/modules/esm/resolve:852:10)
+ 
+    at moduleResolveWithNodePath (node:internal/modules/esm/resolve:979:14)
+ 
+    at defaultResolve (node:internal/modules/esm/resolve:1022:79)
+ 
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)
+ 
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)
+ 
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)
+ 
+    at #resolve (node:internal/modules/esm/loader:690:17)
+ 
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)
+ 
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {
+ 
+  code: 'ERR_MODULE_NOT_FOUND',
+ 
+  url: 'file:///var/task/src/server/app'
+ 
+}
+ 
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.

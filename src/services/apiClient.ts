@@ -125,11 +125,20 @@ class ApiClient {
         } catch {
           errorData = { message: response.statusText };
         }
-        const errorMsg =
-          errorData?.error ||
-          errorData?.message ||
-          (typeof errorData === 'string' ? errorData : null) ||
-          `Request failed with HTTP status ${response.status}`;
+        let errorMsg: string;
+        if (typeof errorData?.error === 'string') {
+          errorMsg = errorData.error;
+        } else if (typeof errorData?.error?.message === 'string') {
+          errorMsg = errorData.error.message;
+        } else if (typeof errorData?.message === 'string') {
+          errorMsg = errorData.message;
+        } else if (typeof errorData === 'string') {
+          errorMsg = errorData;
+        } else if (errorData?.error?.code) {
+          errorMsg = `Server error (${errorData.error.code}): ${errorData.error.message || 'Function invocation error'}`;
+        } else {
+          errorMsg = `Request failed with HTTP status ${response.status}`;
+        }
         throw new ApiError(errorMsg, response.status, false, errorData);
       }
 

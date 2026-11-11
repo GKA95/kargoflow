@@ -57,7 +57,8 @@ export const GoogleAuthButton: React.FC<GoogleAuthButtonProps> = ({
         }
         navigate(destination, { replace: true });
       } catch (err: any) {
-        const msg = err.message || 'Google authentication failed';
+        const rawMsg = err?.message || err;
+        const msg = typeof rawMsg === 'string' ? rawMsg : (rawMsg?.message || JSON.stringify(rawMsg) || 'Google authentication failed');
         setErrorMessage(msg);
         onError?.(msg);
       } finally {
@@ -116,7 +117,8 @@ export const GoogleAuthButton: React.FC<GoogleAuthButtonProps> = ({
             scope: 'openid email profile',
             callback: async (tokenResponse: any) => {
               if (tokenResponse?.error) {
-                const errDetail = tokenResponse.error_description || tokenResponse.error;
+                const rawDetail = tokenResponse.error_description || tokenResponse.error;
+                const errDetail = typeof rawDetail === 'string' ? rawDetail : JSON.stringify(rawDetail);
                 if (errDetail.includes('origin') || tokenResponse.error === 'origin_mismatch') {
                   setShowConfigHelp(true);
                 }
@@ -164,11 +166,12 @@ export const GoogleAuthButton: React.FC<GoogleAuthButtonProps> = ({
       if (event.data?.type === 'GOOGLE_AUTH_CALLBACK') {
         const { code, accessToken, idToken, error } = event.data;
         if (error) {
-          if (error.includes('origin') || error.includes('redirect_uri')) {
+          const cleanErr = typeof error === 'string' ? error : JSON.stringify(error);
+          if (cleanErr.includes('origin') || cleanErr.includes('redirect_uri')) {
             setShowConfigHelp(true);
           }
-          setErrorMessage(`Google OAuth error: ${error}`);
-          onError?.(error);
+          setErrorMessage(`Google OAuth error: ${cleanErr}`);
+          onError?.(cleanErr);
           setIsLoading(false);
           return;
         }
@@ -297,7 +300,7 @@ export const GoogleAuthButton: React.FC<GoogleAuthButtonProps> = ({
           <div className="flex items-start gap-2">
             <AlertCircle className="w-4 h-4 shrink-0 text-amber-600 mt-0.5" />
             <div className="flex-1">
-              <p className="font-medium">{errorMessage}</p>
+              <p className="font-medium">{typeof errorMessage === 'string' ? errorMessage : JSON.stringify(errorMessage)}</p>
             </div>
           </div>
         </div>
