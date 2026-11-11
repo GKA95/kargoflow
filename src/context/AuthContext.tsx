@@ -7,6 +7,7 @@ interface BackendConnectionState {
   isConnected: boolean;
   isDbConnected: boolean;
   message: string;
+  diagnostic?: string;
   checkedAt: string;
   baseUrl: string;
 }
@@ -56,6 +57,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       isConnected: status.isConnected,
       isDbConnected: !!status.isDbConnected,
       message: status.message,
+      diagnostic: status.diagnostic,
       checkedAt: new Date().toISOString(),
       baseUrl: apiClient.getBaseUrl(),
     });

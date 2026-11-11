@@ -4,7 +4,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import MongoStore from 'connect-mongo';
-import { connectToDatabase, getDatabaseStatus } from './db/connection';
+import { connectToDatabase, getDatabaseStatus, sanitizeMongoUri } from './db/connection';
 import authRoutes from './routes/authRoutes';
 
 const app = express();
@@ -48,19 +48,27 @@ connectToDatabase().catch((err) => {
   console.warn('[MongoDB] Initial connection notice:', err.message);
 });
 
-// Session Configuration with MongoStore
+// Session Configuration with MongoStore (with resilient fallback so server never crashes)
 const sessionSecret = process.env.SESSION_SECRET || 'kargoflow_dev_session_secret_ghana_2026';
-const isProduction = process.env.NODE_ENV === 'production';
+const cleanMongoUri = sanitizeMongoUri(process.env.MONGODB_URI);
 
 let sessionStore: session.Store | undefined;
-if (process.env.MONGODB_URI) {
-  sessionStore = MongoStore.create({
-    mongoUrl: process.env.MONGODB_URI,
-    collectionName: 'sessions',
-    ttl: 14 * 24 * 60 * 60, // 14 days
-    autoRemove: 'native',
-    touchAfter: 24 * 3600, // lazy session update
-  });
+if (cleanMongoUri) {
+  try {
+    sessionStore = MongoStore.create({
+      mongoUrl: cleanMongoUri,
+      collectionName: 'sessions',
+      ttl: 14 * 24 * 60 * 60, // 14 days
+      autoRemove: 'native',
+      touchAfter: 24 * 3600, // lazy session update
+    });
+    sessionStore.on('error', (storeErr) => {
+      console.warn('[SessionStore] MongoStore background notice:', storeErr?.message || storeErr);
+    });
+  } catch (err: any) {
+    console.warn('[SessionStore] Failed to initialize MongoStore, falling back to memory session store:', err?.message || err);
+    sessionStore = undefined;
+  }
 }
 
 app.use(
@@ -134,7 +142,7 @@ app.get(['/auth/callback', '/auth/callback/'], (_req: Request, res: Response) =>
 });
 
 // Root API endpoint
-app.get(['/api', '/api/'], (_req: Request, res: Response) => {
+app.get(['/', '/api', '/api/'], (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     service: 'KargoFlow Ghana API Engine',
@@ -170,6 +178,11 @@ app.get(['/health', '/api/health'], async (_req: Request, res: Response) => {
       status: dbStatus.isConnected ? 'connected' : 'disconnected',
       message: dbStatus.message,
       readyState: dbStatus.readyState,
+      diagnostic: dbStatus.diagnostic,
+      lastError: dbStatus.lastError,
+      uriConfigured: dbStatus.uriConfigured,
+      host: dbStatus.host,
+      databaseName: dbStatus.name,
     },
     integrations: {
       googleAuth: Boolean(process.env.GOOGLE_CLIENT_ID),

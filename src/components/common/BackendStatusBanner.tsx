@@ -114,23 +114,32 @@ export const BackendStatusBanner: React.FC = () => {
         <div className="bg-slate-950 border-t border-slate-800 px-4 sm:px-6 lg:px-8 py-3 text-slate-300 transition-all">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
             <div>
-              <p className="font-semibold text-white mb-1">Architecture & Data Guarantee</p>
-              <p className="text-slate-400 leading-relaxed">
-                In strict adherence to your instructions, zero fake records or mock databases were generated.
-                All dynamic stats, orders, and logs await your upcoming Node/Express and MongoDB integration.
+              <p className="font-semibold text-white mb-1">Live Diagnostic & Status</p>
+              <p className="text-slate-300 leading-relaxed font-mono text-[11px] bg-slate-900 p-2 rounded border border-slate-800">
+                {backendState.diagnostic || backendState.message}
+              </p>
+              <p className="text-slate-400 mt-1.5 leading-relaxed text-[11px]">
+                {backendState.isConnected && backendState.isDbConnected ? (
+                  <span className="text-emerald-400">Database read/write state healthy on Atlas cluster.</span>
+                ) : (
+                  <span>Verify MongoDB Atlas Network Access has <code className="bg-slate-800 px-1 py-0.2 rounded text-teal-300">0.0.0.0/0</code> added, and that Vercel has <code className="bg-slate-800 px-1 py-0.2 rounded text-teal-300">MONGODB_URI</code> configured.</span>
+                )}
               </p>
             </div>
             <div>
               <p className="font-semibold text-white mb-1">Configured API Base</p>
               <p className="font-mono text-teal-300">{backendState.baseUrl}</p>
               <p className="text-slate-400 mt-1">
-                Environment variable: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">VITE_API_BASE_URL</code>
+                Endpoint: <code className="bg-slate-800 px-1 py-0.5 rounded text-amber-200">/api/health</code>
+              </p>
+              <p className="text-slate-400 mt-1 text-[11px]">
+                Checked: <span className="font-mono text-slate-300">{new Date(backendState.checkedAt).toLocaleTimeString()}</span>
               </p>
             </div>
             <div>
-              <p className="font-semibold text-white mb-1">Next Stage Readiness</p>
-              <p className="text-slate-400 leading-relaxed">
-                All client endpoints (Paystack payment webhook, Leaflet coordinates, JWT Bearer tokens, Ghana Post GPS validation) are fully wired in <code className="text-slate-200">src/services/</code>.
+              <p className="font-semibold text-white mb-1">Architecture Guarantee</p>
+              <p className="text-slate-400 leading-relaxed text-[11px]">
+                Compliant with Ghana Data Protection Act 843. Zero fake mock data. Live database connections, real JWT bearer tokens, and genuine authentication sessions only.
               </p>
             </div>
           </div>

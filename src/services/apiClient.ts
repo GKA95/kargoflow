@@ -63,7 +63,13 @@ class ApiClient {
     return headers;
   }
 
-  public async checkHealth(): Promise<{ isConnected: boolean; isDbConnected?: boolean; message: string; dbStatus?: string }> {
+  public async checkHealth(): Promise<{
+    isConnected: boolean;
+    isDbConnected?: boolean;
+    message: string;
+    dbStatus?: string;
+    diagnostic?: string;
+  }> {
     try {
       const response = await fetch(`${this.baseUrl}/health`, {
         method: 'GET',
@@ -78,17 +84,24 @@ class ApiClient {
           isConnected: true,
           isDbConnected,
           dbStatus: data?.database?.status,
+          diagnostic: data?.database?.diagnostic,
           message: isDbConnected
             ? 'Backend & MongoDB Atlas Connected'
             : data?.database?.message || 'API Online (MongoDB Awaiting URI)',
         };
       }
-      return { isConnected: false, isDbConnected: false, message: `Backend responded with HTTP ${response.status}` };
+      return {
+        isConnected: false,
+        isDbConnected: false,
+        message: `Backend responded with HTTP ${response.status}`,
+        diagnostic: 'Server responded with an unexpected status code. Check serverless logs in Vercel.',
+      };
     } catch {
       return {
         isConnected: false,
         isDbConnected: false,
-        message: 'Backend server not detected at configured endpoint. Running in frontend-ready mode.',
+        message: 'Backend server not detected at configured endpoint.',
+        diagnostic: 'If deployed to GitHub Pages, static hosting cannot run Express. Connect your repository to Vercel instead.',
       };
     }
   }
